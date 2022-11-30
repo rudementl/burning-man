@@ -1,0 +1,32 @@
+.footer {
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  @media (max-width: $breakpoint480) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  // .footer__info
+
+  &__info {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  // .footer__copy
+
+  &__copy {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+  }
+}

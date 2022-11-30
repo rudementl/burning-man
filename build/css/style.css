@@ -1,0 +1,746 @@
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: "Anton", serif;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  background-image: url("../img/header-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  overflow: hidden;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.tel {
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.logo a {
+  color: white;
+  margin-right: 70px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+  margin-right: auto;
+}
+
+.menu__item-link {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.hero {
+  padding-top: 216px;
+}
+
+.hero__title {
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+
+.hero__title--lg {
+  font-size: 100px;
+  line-height: 151px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__btn {
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btn {
+  width: 238px;
+  text-align: center;
+  display: inline-block;
+  padding: 18px 23px;
+  border: 1px solid #ffffff;
+  color: white;
+  -webkit-transition: color 0.4s ease, background-color 0.4s ease;
+  -o-transition: color 0.4s ease, background-color 0.4s ease;
+  transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.about {
+  padding-top: 113px;
+  padding-bottom: 67px;
+}
+
+.about__title {
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.about__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+}
+
+.about__content_title {
+  font-size: 25px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about__content_text {
+  max-width: 564px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  color: #000000;
+}
+
+.card {
+  padding-bottom: 114px;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* Настройки маркированного списка */
+
+.hover-effect-cover {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+.hover-effect-cover li {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Заголовок, текст и ссылка */
+
+.hover-effect-cover li h3 {
+  color: #fff;
+  margin: 5px;
+}
+
+.hover-effect-cover li p {
+  color: #fff;
+  margin: 5px;
+}
+
+.hover-effect-cover li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-effect-cover li a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Выезжающий блок с текстом для панели слева направо */
+
+.hover-effect-cover li > div.effect-to-right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.hover-effect-cover li:hover > div.effect-to-right {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover li div.effect-to-right {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Фон блока при наведении */
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  -webkit-transform: translate(-250px, 0px) rotate(0deg);
+      -ms-transform: translate(-250px, 0px) rotate(0deg);
+          transform: translate(-250px, 0px) rotate(0deg);
+  /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-right {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+/* Выезжающий блок с текстом для панели справа налево */
+
+.hover-effect-cover li > div.effect-to-left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.hover-effect-cover li:hover > div.effect-to-left {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover li div.effect-to-left {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Фон блока при наведении */
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  -webkit-transform: translate(250px, 0px) rotate(0deg);
+      -ms-transform: translate(250px, 0px) rotate(0deg);
+          transform: translate(250px, 0px) rotate(0deg);
+  /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-left {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+/* Выезжающий блок с текстом для панели снизу вверх */
+
+.hover-effect-cover li > div.effect-to-top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.hover-effect-cover li:hover > div.effect-to-top {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover li div.effect-to-top {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Фон блока при наведении */
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  -webkit-transform: translate(0px, 250px) rotate(0deg);
+      -ms-transform: translate(0px, 250px) rotate(0deg);
+          transform: translate(0px, 250px) rotate(0deg);
+  /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-top {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+/* Выезжающий блок с текстом для панели сверху вниз */
+
+.hover-effect-cover li > div.effect-to-bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hover-effect-cover li:hover > div.effect-to-bottom {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hover-effect-cover li div.effect-to-bottom {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Фон блока при наведении */
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  -webkit-transform: translate(0px, -250px) rotate(0deg);
+      -ms-transform: translate(0px, -250px) rotate(0deg);
+          transform: translate(0px, -250px) rotate(0deg);
+  /* Направление выезжающей панели */
+}
+
+.hover-effect-cover li:hover div.effect-to-bottom {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px) rotate(0deg);
+      -ms-transform: translate(0px, 0px) rotate(0deg);
+          transform: translate(0px, 0px) rotate(0deg);
+}
+
+.footer {
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 80%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__info {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer__copy {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media (max-width: 1449.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .tel {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 150px;
+  }
+
+  .hero__title {
+    font-size: 20px;
+  }
+
+  .hero__title--lg {
+    font-size: 70px;
+    line-height: 90px;
+  }
+
+  .about__content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .cards__img--lg {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 344px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu {
+    position: fixed;
+    background: #131418;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+  }
+
+  .menu.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0;
+    top: 0;
+    gap: 30px;
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    pointer-events: all;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 22;
+    -webkit-animation: fade 0.1s linear;
+            animation: fade 0.1s linear;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+  }
+
+  .burger.active-burger:before {
+    background: "white";
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    top: 8px;
+  }
+
+  .burger.active-burger:after {
+    background: "white";
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 10px;
+    -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+
+  .burger.active-burger span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .burger:before,
+  .burger:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: "white";
+    -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+
+  .burger:before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 100%;
+    background: "white";
+    height: 2px;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+
+  .menu__item-link {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about__content_title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about__content_text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .cards__img--lg {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,173 @@
+.card {
+  padding-bottom: 114px;
+}
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards {
+  &__img--lg {
+    @media (max-width: $breakpoint768) {
+      width: 60%;
+      object-fit: cover;
+      height: 344px;
+    }
+    @media (max-width: $breakpoint480) {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Настройки маркированного списка */
+.hover-effect-cover {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.hover-effect-cover li {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0;
+  border: 5px solid #fff;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+}
+/* Заголовок, текст и ссылка */
+.hover-effect-cover li h3 {
+  color: #fff;
+  margin: 5px;
+}
+.hover-effect-cover li p {
+  color: #fff;
+  margin: 5px;
+}
+.hover-effect-cover li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+.hover-effect-cover li a:hover {
+  background: #fff;
+  color: #000;
+}
+/* Выезжающий блок с текстом для панели слева направо */
+.hover-effect-cover li > div.effect-to-right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hover-effect-cover li:hover > div.effect-to-right {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover li div.effect-to-right {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(-250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-right {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели справа налево */
+.hover-effect-cover li > div.effect-to-left {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hover-effect-cover li:hover > div.effect-to-left {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover li div.effect-to-left {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(250px, 0px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-left {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели снизу вверх */
+.hover-effect-cover li > div.effect-to-top {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hover-effect-cover li:hover > div.effect-to-top {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover li div.effect-to-top {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-top {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}
+/* Выезжающий блок с текстом для панели сверху вниз */
+.hover-effect-cover li > div.effect-to-bottom {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hover-effect-cover li:hover > div.effect-to-bottom {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.hover-effect-cover li div.effect-to-bottom {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+  transform: translate(0px, -250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.hover-effect-cover li:hover div.effect-to-bottom {
+  opacity: 1;
+  transform: translate(0px, 0px) rotate(0deg);
+}
